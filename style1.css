@@ -115,7 +115,7 @@
 	height: 6vh;
 	overflow: hidden;
 	
-	background-color: #008000;
+	background-color: #ffffff;
 }
 .scrolling h2 {
 	position: absolute;
@@ -127,7 +127,7 @@
 	font-family: 'Tw Cen MT';
 	text-align: center;
 	line-height: 50px;
-	color: #fff;
+	color: #24262b;
 	transform: translateX(100%);
 	animation: scrolling 15s linear infinite;
 }
