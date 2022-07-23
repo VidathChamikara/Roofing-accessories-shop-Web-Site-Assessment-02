@@ -4,55 +4,10 @@
 			box-sizing: border-box;
 			font-family: 'Tw Cen MT';
 		}
-		nav{
-			width: 100%;
-			height: 10vh;
-			
-			display: flex;
-			justify-content: space-around;
-			align-items: center;
-		}
-		.menu ul li{
-			display: inline-block;
-			position: relative;
-			margin: 0 15px;
-		}
-		.menu ul li a{
-			text-decoration: none;
-			color: black;
-			font-size: 1.3rem;
-			padding: 10px 15px;
-		}
-		.menu a::before{
-			content: '';
-			position: absolute;
-			left: 0;
-			top: 100%;
-			width: 0%;
-			background: #3cb371;
-			height: 3px;
-			transition: all 0.5s linear;
-			margin: 7px 0;
-		}
-		.menu a::after{
-			content: '';
-			position: absolute;
-			right: 0;
-			top: 100%;
-			width: 0%;
-			background: #3cb371;
-			height: 3px;
-			transition: all 0.5s linear;
-			margin: 7px 0;
-		}
-		.menu a:hover::before{
-			width: 100%;
-			background: #3cb371;
-		}
-		.menu a:hover::after{
-			width: 100%;
-			background: #3cb371;
-		}
+		
+		
+		
+		
 		.mySlides {display: none;}
 		.slideshow-container {
   max-width: 100%;
