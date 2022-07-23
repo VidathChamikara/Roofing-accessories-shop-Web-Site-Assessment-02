@@ -1,0 +1,137 @@
+*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			font-family: 'Tw Cen MT';
+		}
+		nav{
+			width: 100%;
+			height: 10vh;
+			
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+		}
+		.menu ul li{
+			display: inline-block;
+			position: relative;
+			margin: 0 15px;
+		}
+		.menu ul li a{
+			text-decoration: none;
+			color: black;
+			font-size: 1.3rem;
+			padding: 10px 15px;
+		}
+		.menu a::before{
+			content: '';
+			position: absolute;
+			left: 0;
+			top: 100%;
+			width: 0%;
+			background: #3cb371;
+			height: 3px;
+			transition: all 0.5s linear;
+			margin: 7px 0;
+		}
+		.menu a::after{
+			content: '';
+			position: absolute;
+			right: 0;
+			top: 100%;
+			width: 0%;
+			background: #3cb371;
+			height: 3px;
+			transition: all 0.5s linear;
+			margin: 7px 0;
+		}
+		.menu a:hover::before{
+			width: 100%;
+			background: #3cb371;
+		}
+		.menu a:hover::after{
+			width: 100%;
+			background: #3cb371;
+		}
+		.mySlides {display: none;}
+		.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+.scrolling {
+	position: relative;
+	width: 100%;
+	height: 6vh;
+	overflow: hidden;
+	
+	background-color: #008000;
+}
+.scrolling h2 {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	font-size: 1.2em;
+	font-family: 'Tw Cen MT';
+	text-align: center;
+	line-height: 50px;
+	color: #fff;
+	transform: translateX(100%);
+	animation: scrolling 15s linear infinite;
+}
+@keyframes scrolling {
+	0% {
+		transform: translateX(100%);
+	}
+	100% {
+		transform: translateX(-100%);
+	}
+}
+
+
